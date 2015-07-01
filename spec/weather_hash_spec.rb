@@ -1,0 +1,45 @@
+require 'spec_helper.rb'
+
+describe 'Weather Hash' do 
+
+  before(:each) do
+    @nyc_weather = {
+      :city => "New York",
+      :description => "Partly Cloudy",
+      :temperature_farenheit => 75,
+      :temperature_celcius => 19.1
+    }
+
+    @sf_weather = {
+      :city => "San Francisco",
+      :description => "Sunny",
+      :temperature_farenheit => 58.3,
+      :temperature_celcius => 14.6
+    }
+  end
+
+  describe '#location' do
+    it "returns the location from the weather hash" do
+      expect(location(@nyc_weather)).to eq("New York")
+      expect(location(@sf_weather)).to eq("San Francisco")
+    end
+  end
+
+  describe '#description' do
+    it "returns the description from the weather hash" do
+
+      expect(description(@nyc_weather)).to eq("Partly Cloudy")
+
+      expect(description(@sf_weather)).to eq("Sunny")
+    end
+  end
+
+  describe '#weather_report' do
+    it "returns a weather report as a string" do
+
+      expect(weather_report(@nyc_weather)).to eq("The weather in New York is Partly Cloudy. The temperature is 75 degrees Farenheit." )
+    end
+  end
+
+  
+end
