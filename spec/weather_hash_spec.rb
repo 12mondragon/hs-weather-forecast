@@ -41,5 +41,12 @@ describe 'Weather Hash' do
     end
   end
 
+  describe '#convert_temp' do
+    it "accesses the Farenheit temperature from the hash and returns it as Celsius" do
+
+      expect(convert_temp(@nyc_weather)).to eq(23.89)
+    end
+  end
+
   
 end
