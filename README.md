@@ -3,7 +3,7 @@
 ![](http://www.spanishprograms.com/blog/wp-content/uploads/2014/08/weather.jpg)
 
 
-Today, you're using data from Weather Underground to build out a weather report app! They're giving you awesome weather data in a hash that looks something like this: 
+Today, you're using data from [Weather Underground](http://www.wunderground.com/) to build out a weather report app! They're giving you awesome weather data in a hash that looks something like this: 
 
 ```ruby
 {
