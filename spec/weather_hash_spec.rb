@@ -40,6 +40,11 @@ describe 'Weather Hash' do
       expect(weather_report(@nyc_weather)).to eq("The weather in New York is Partly Cloudy. The temperature is 75 degrees Farenheit." )
     end
   end
+   describe '#city_weather_info' do
+    it "uses the each method to iterate over all the information for a city and returns a string 'The [key] is [value]'" do
+      expect(city_weather_info(@nyc_weather)).to eq(@nyc_weather)
+    end
+  end
 
   describe '#convert_temp' do
     it "accesses the Farenheit temperature from the hash and returns it as Celsius" do
@@ -47,6 +52,8 @@ describe 'Weather Hash' do
       expect(convert_temp(@nyc_weather)).to eq(23.89)
     end
   end
+
+
 
   
 end
