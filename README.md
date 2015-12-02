@@ -17,3 +17,5 @@ Today, you're using data from [Weather Underground](http://www.wunderground.com/
 ## Instructions
 
 This lab is test driven, so first fork and clone or use the "Open in Nitrous" button. Write your code in the `weather.rb` file. Using the comments and tests as a guide,  write methods that take in a weather hash as an argument and return the desired values. 
+
+<a href='https://learn.co/lessons/hs-weather-forecast' data-visibility='hidden'>View this lesson on Learn.co</a>
