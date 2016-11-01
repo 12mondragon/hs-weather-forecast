@@ -1,13 +1,13 @@
 # Your methods should take in a hash as an argument - here's an example of what the hash will look like - the methods should take this hash as an argument and return the desired output. 
 
-# weather = {
-# 	:city => "New York",
-# 	:description => "Partly Cloudy",
-# 	:temperature_farenheit => 66.3
-# }
+weather = {
+	:city => "New York",
+	:description => "Partly Cloudy",
+	:temperature_farenheit => 66.3
+}
 
 # 1. Complete the method below called location, that accepts a hash called weather as an argument so that it returns the value of city from the weather hash. 
-def location(weather)
+def location(hash)
 	
 end
 
@@ -18,8 +18,10 @@ end
 
 
 #4. Write a method that takes in the weather hash as an argument. 
-# You'll want to use the each method to iterate over the hash and print out
-# `The city is New York.` `The description is Partly Cloudy.` `The temperature is 66.3.`
+# This method should take three things as an argument: a hash, a key, and a value. It should add a new key-value pair to the hash. Test it by trying to add a key of :precipitation and a value of "snowing" 
+
+
+
 
 
 # BONUS:  Write a method that takes in the weather hash as an argument and converts the farenheit temperature to celcius. Have the method round your answer to two decimal places. Is there a method we can use to round in Ruby?
